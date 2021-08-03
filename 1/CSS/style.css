@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.dice{
+    margin: 10px;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #000;
+    border-radius: 15px;
+    box-sizing: border-box;
+    list-style: none;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.point::before{
+    content:"";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+}
+
+.one{
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    justify-content:space-between ;
+}
+
+.two .point:nth-child(2){
+    align-self: flex-end;
+}   
+
+.three{
+    justify-content: space-between;
+}
+
+.three .point:nth-child(2){
+    align-self: center;
+}
+
+.three .point:nth-child(3){
+    align-self: flex-end;
+}
+
+.four{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.four .point{
+    width: 50%;
+}
+
+.four .point:nth-child(even){
+    text-align: right;
+}
+
+.five{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.five .point:nth-child(3){
+    width: 100%;
+    text-align: center;
+}
+
+.six{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.six .point{
+    width: 50%;
+}
+
+.six .point:nth-child(even){
+    text-align: right;
+}
